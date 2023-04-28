@@ -1,0 +1,47 @@
+#
+# Copyright (C) 2006, Board of Trustees of the University of Illinois.
+#
+# The program is copyrighted by the University of Illinois, and should
+# not be distributed without prior approval.  Commercialization of this
+# product requires prior licensing from the University of Illinois.
+# Commercialization includes the integration of this code in part or
+# whole into a product for resale.
+#
+#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+# Author: C. W. Hsu, B. W. Wah, R. Y. Huang, Y. X. Chen
+#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+
+Parsing domain file
+ domain 'SATELLITE' defined
+Parsing problem file
+ problem 'STRIPS-SAT-X-1' defined
+
+
+
+checking for cyclic := effects --- OK.
+
+
+
+
+
+
+
+
+Solution found.
+
+; Time 0.00
+; ParsingTime 0.00
+; NrActions 9
+; MakeSpan
+; MetricValue 224.180
+
+	 0.00100:  (SWITCH_ON INSTRUMENT0 SATELLITE0)[2.00000]
+	 2.00200:  (TURN_TO SATELLITE0 GROUNDSTATION2 PHENOMENON6)[50.73000]
+	 52.73300:  (CALIBRATE SATELLITE0 INSTRUMENT0 GROUNDSTATION2)[5.90000]
+	 58.63400:  (TURN_TO SATELLITE0 PHENOMENON6 GROUNDSTATION2)[50.73000]
+	 109.36500:  (TAKE_IMAGE SATELLITE0 PHENOMENON6 INSTRUMENT0 THERMOGRAPH0)[7.00000]
+	 116.36600:  (TURN_TO SATELLITE0 STAR5 PHENOMENON6)[29.32000]
+	 145.68700:  (TAKE_IMAGE SATELLITE0 STAR5 INSTRUMENT0 THERMOGRAPH0)[7.00000]
+	 152.68799:  (TURN_TO SATELLITE0 PHENOMENON4 STAR5)[64.50000]
+	 217.18900:  (TAKE_IMAGE SATELLITE0 PHENOMENON4 INSTRUMENT0 THERMOGRAPH0)[7.00000]

@@ -1,0 +1,75 @@
+
+
+NUMERIC_THREATS_MODE: 0
+
+; Command line: /home/malola/Downloads/LPG-td-1.4/lpg-td -o /home/malola/ICAPS/IPC3/Test1/ZenoTravel/Time/zenotravelTandN.pddl -f /home/malola/ICAPS/IPC3/Test1/ZenoTravel/Time/pfile8 -speed   
+
+
+Parsing domain file:  domain 'ZENO-TRAVEL' defined ... done.
+Parsing problem file:  problem 'ZTRAVEL-3-6' defined ... done.
+
+
+
+Modality: Fast Planner
+
+Number of actions             :     345
+Number of conditional actions :       0
+Number of facts               :      64
+
+
+Analyzing Planning Problem:
+	Temporal Planning Problem: YES
+	Numeric Planning Problem: YES
+	Problem with Timed Initial Literals: NO
+	Problem with Derived Predicates: NO
+
+Evaluation function weights:
+     Action duration 5.00; Action cost 1.00
+
+
+Computing mutex... done
+
+Preprocessing total time: 0.01 seconds
+
+Searching ('.' = every 50 search steps):
+ solution found: 
+ Recompute start times
+
+ first_solution_cpu_time: 0.01 
+
+Plan computed:
+   Time: (ACTION) [action Duration; action Cost]
+ 0.0000: (REFUEL PLANE3 CITY0) [D:1.50; C:0.10]
+ 0.0000: (REFUEL PLANE1 CITY0) [D:3.04; C:0.10]
+ 1.5042: (FLY PLANE3 CITY0 CITY1) [D:8.33; C:5.40]
+ 3.0380: (ZOOM PLANE1 CITY0 CITY3) [D:4.60; C:19.74]
+ 9.8375: (BOARD PERSON1 PLANE3 CITY1) [D:0.30; C:0.10]
+ 10.1375: (FLY PLANE3 CITY1 CITY4) [D:5.37; C:3.48]
+ 15.5079: (BOARD PERSON6 PLANE3 CITY4) [D:0.30; C:0.10]
+ 15.8079: (FLY PLANE3 CITY4 CITY1) [D:5.37; C:3.48]
+ 21.1783: (REFUEL PLANE3 CITY1) [D:1.73; C:0.10]
+ 22.9065: (FLY PLANE3 CITY1 CITY0) [D:8.33; C:5.40]
+ 31.2398: (DEBARK PERSON1 PLANE3 CITY0) [D:0.60; C:0.10]
+ 31.2398: (REFUEL PLANE3 CITY0) [D:0.75; C:0.10]
+ 31.9948: (FLY PLANE3 CITY0 CITY2) [D:6.17; C:4.00]
+ 38.1615: (DEBARK PERSON6 PLANE3 CITY2) [D:0.60; C:0.10]
+ 38.1615: (BOARD PERSON3 PLANE3 CITY2) [D:0.30; C:0.10]
+ 38.1615: (REFUEL PLANE3 CITY2) [D:0.56; C:0.10]
+ 38.7615: (FLY PLANE3 CITY2 CITY3) [D:7.01; C:4.54]
+ 45.7708: (REFUEL PLANE3 CITY3) [D:0.64; C:0.10]
+ 46.4059: (FLY PLANE3 CITY3 CITY0) [D:6.77; C:4.39]
+ 53.1744: (FLY PLANE3 CITY0 CITY1) [D:8.33; C:5.40]
+ 61.5077: (DEBARK PERSON3 PLANE3 CITY1) [D:0.60; C:0.10]
+
+
+
+METRIC_VALUE = 366.36
+Solution found:
+Total time:      0.01
+Search time:     0.00
+Actions:         21
+Duration:        62.108
+Plan quality:    366.359 
+Total Num Flips:  30
+     Plan file:       plan_/home/malola/ICAPS/IPC3/Test1/ZenoTravel/Time/pfile8_1.SOL
+

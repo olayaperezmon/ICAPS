@@ -1,0 +1,67 @@
+
+
+NUMERIC_THREATS_MODE: 0
+
+; Command line: /home/malola/Downloads/LPG-td-1.4/lpg-td -o /home/malola/ICAPS/IPC3/Test2/Satellite/Time/computedDurationsSat.pddl -f /home/malola/ICAPS/IPC3/Test2/Satellite/Time/pfile2 -speed   
+
+
+Parsing domain file:  domain 'SATELLITE' defined ... done.
+Parsing problem file:  problem 'STRIPS-SAT-X-1' defined ... done.
+
+
+
+Modality: Fast Planner
+
+Number of actions             :     110
+Number of conditional actions :       0
+Number of facts               :      37
+
+
+Analyzing Planning Problem:
+	Temporal Planning Problem: YES
+	Numeric Planning Problem: YES
+	Problem with Timed Initial Literals: NO
+	Problem with Derived Predicates: NO
+
+Evaluation function weights:
+     Action duration 1.00; Action cost 0.00
+
+
+Computing mutex... done
+
+Preprocessing total time: 0.00 seconds
+
+Searching ('.' = every 50 search steps):
+ solution found: 
+ Recompute start times
+
+ first_solution_cpu_time: 0.00 
+
+Plan computed:
+   Time: (ACTION) [action Duration; action Cost]
+ 0.0000: (SWITCH_ON INSTRUMENT1 SATELLITE0) [D:2.00; C:0.10]
+ 0.0000: (TURN_TO SATELLITE0 GROUNDSTATION2 PLANET4) [D:58.98; C:0.10]
+ 58.9800: (CALIBRATE SATELLITE0 INSTRUMENT1 GROUNDSTATION2) [D:5.54; C:0.10]
+ 58.9800: (TURN_TO SATELLITE0 PHENOMENON5 GROUNDSTATION2) [D:39.44; C:0.10]
+ 98.4200: (TAKE_IMAGE SATELLITE0 PHENOMENON5 INSTRUMENT1 IMAGE2) [D:7.00; C:0.10]
+ 105.4200: (TURN_TO SATELLITE0 PLANET4 PHENOMENON5) [D:15.48; C:0.10]
+ 120.9000: (TAKE_IMAGE SATELLITE0 PLANET4 INSTRUMENT1 INFRARED0) [D:7.00; C:0.10]
+ 127.9000: (TURN_TO SATELLITE0 PLANET3 PLANET4) [D:30.65; C:0.10]
+ 158.5500: (TAKE_IMAGE SATELLITE0 PLANET3 INSTRUMENT1 INFRARED0) [D:7.00; C:0.10]
+ 165.5500: (TURN_TO SATELLITE0 PHENOMENON6 PLANET3) [D:26.25; C:0.10]
+ 191.8000: (TAKE_IMAGE SATELLITE0 PHENOMENON6 INSTRUMENT1 INFRARED0) [D:7.00; C:0.10]
+ 198.8000: (TURN_TO SATELLITE0 STAR7 PHENOMENON6) [D:29.32; C:0.10]
+ 228.1200: (TAKE_IMAGE SATELLITE0 STAR7 INSTRUMENT1 INFRARED0) [D:7.00; C:0.10]
+
+
+
+METRIC_VALUE = 235.12
+Solution found:
+Total time:      0.00
+Search time:     0.00
+Actions:         13
+Duration:        235.120
+Plan quality:    235.120 
+Total Num Flips:  15
+     Plan file:       plan_/home/malola/ICAPS/IPC3/Test2/Satellite/Time/pfile2_1.SOL
+

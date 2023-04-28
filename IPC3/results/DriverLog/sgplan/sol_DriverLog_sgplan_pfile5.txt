@@ -1,0 +1,155 @@
+#
+# Copyright (C) 2006, Board of Trustees of the University of Illinois.
+#
+# The program is copyrighted by the University of Illinois, and should
+# not be distributed without prior approval.  Commercialization of this
+# product requires prior licensing from the University of Illinois.
+# Commercialization includes the integration of this code in part or
+# whole into a product for resale.
+#
+#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+# Author: C. W. Hsu, B. W. Wah, R. Y. Huang, Y. X. Chen
+#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+
+Parsing domain file
+ domain 'DRIVERLOG' defined
+Parsing problem file
+ problem 'DLOG-3-2-5' defined
+
+
+
+checking for cyclic := effects --- OK.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+; Time 0.01
+; ParsingTime 0.00
+; NrActions 24
+; MakeSpan
+; MetricValue 239.024
+; PlanningTechnique Modified-FF(enforced hill-climbing search) as the subplanner
+
+0.001: (BOARD-TRUCK DRIVER1 TRUCK2 S1) [1.0000]
+0.002: (WALK DRIVER3 S0 P0-1) [64.0000]
+0.003: (WALK DRIVER2 S0 P0-2) [34.0000]
+1.004: (DRIVE-TRUCK TRUCK2 S1 S2 DRIVER1) [14.0000]
+15.005: (LOAD-TRUCK PACKAGE4 TRUCK2 S2) [2.0000]
+17.006: (DRIVE-TRUCK TRUCK2 S2 S0 DRIVER1) [50.0000]
+34.007: (WALK DRIVER2 P0-2 S2) [78.0000]
+64.008: (WALK DRIVER3 P0-1 S1) [23.0000]
+67.009: (UNLOAD-TRUCK PACKAGE4 TRUCK2 S0) [2.0000]
+69.010: (DRIVE-TRUCK TRUCK2 S0 S2 DRIVER1) [50.0000]
+87.011: (BOARD-TRUCK DRIVER3 TRUCK1 S1) [1.0000]
+88.012: (DRIVE-TRUCK TRUCK1 S1 S2 DRIVER3) [14.0000]
+119.013: (LOAD-TRUCK PACKAGE3 TRUCK2 S2) [2.0000]
+121.014: (DRIVE-TRUCK TRUCK2 S2 S1 DRIVER1) [14.0000]
+135.015: (UNLOAD-TRUCK PACKAGE3 TRUCK2 S1) [2.0000]
+137.016: (DRIVE-TRUCK TRUCK2 S1 S0 DRIVER1) [20.0000]
+157.017: (LOAD-TRUCK PACKAGE2 TRUCK2 S0) [2.0000]
+159.018: (DRIVE-TRUCK TRUCK2 S0 S1 DRIVER1) [20.0000]
+179.019: (UNLOAD-TRUCK PACKAGE2 TRUCK2 S1) [2.0000]
+181.020: (DRIVE-TRUCK TRUCK2 S1 S0 DRIVER1) [20.0000]
+201.021: (LOAD-TRUCK PACKAGE1 TRUCK2 S0) [2.0000]
+203.022: (DRIVE-TRUCK TRUCK2 S0 S1 DRIVER1) [20.0000]
+223.023: (UNLOAD-TRUCK PACKAGE1 TRUCK2 S1) [2.0000]
+225.024: (DRIVE-TRUCK TRUCK2 S1 S2 DRIVER1) [14.0000]

@@ -1,0 +1,68 @@
+
+
+NUMERIC_THREATS_MODE: 0
+
+; Command line: /home/malola/Downloads/LPG-td-1.4/lpg-td -o /home/malola/ICAPS/IPC3/Test2/Satellite/Time/computedDurationsSat.pddl -f /home/malola/ICAPS/IPC3/Test2/Satellite/Time/pfile3 -speed   
+
+
+Parsing domain file:  domain 'SATELLITE' defined ... done.
+Parsing problem file:  problem 'STRIPS-SAT-X-1' defined ... done.
+
+
+
+Modality: Fast Planner
+
+Number of actions             :     204
+Number of conditional actions :       0
+Number of facts               :      50
+
+
+Analyzing Planning Problem:
+	Temporal Planning Problem: YES
+	Numeric Planning Problem: YES
+	Problem with Timed Initial Literals: NO
+	Problem with Derived Predicates: NO
+
+Evaluation function weights:
+     Action duration 1.00; Action cost 0.00
+
+
+Computing mutex... done
+
+Preprocessing total time: 0.00 seconds
+
+Searching ('.' = every 50 search steps):
+ solution found: 
+ Recompute start times
+
+ first_solution_cpu_time: 0.00 
+
+Plan computed:
+   Time: (ACTION) [action Duration; action Cost]
+ 0.0000: (SWITCH_ON INSTRUMENT0 SATELLITE0) [D:2.00; C:0.10]
+ 0.0000: (TURN_TO SATELLITE0 STAR1 STAR4) [D:1.53; C:0.10]
+ 0.0000: (SWITCH_ON INSTRUMENT3 SATELLITE1) [D:2.00; C:0.10]
+ 2.0000: (CALIBRATE SATELLITE0 INSTRUMENT0 STAR1) [D:37.30; C:0.10]
+ 2.0000: (TURN_TO SATELLITE0 STAR4 STAR1) [D:1.53; C:0.10]
+ 2.0000: (CALIBRATE SATELLITE1 INSTRUMENT3 STAR0) [D:16.90; C:0.10]
+ 2.0000: (TURN_TO SATELLITE1 STAR1 STAR0) [D:34.35; C:0.10]
+ 36.3500: (TURN_TO SATELLITE1 PHENOMENON7 STAR1) [D:13.30; C:0.10]
+ 39.3000: (TAKE_IMAGE SATELLITE0 STAR4 INSTRUMENT0 SPECTROGRAPH2) [D:7.00; C:0.10]
+ 46.3000: (TURN_TO SATELLITE0 PHENOMENON5 STAR4) [D:0.53; C:0.10]
+ 46.8297: (TAKE_IMAGE SATELLITE0 PHENOMENON5 INSTRUMENT0 SPECTROGRAPH2) [D:7.00; C:0.10]
+ 49.6500: (TAKE_IMAGE SATELLITE1 PHENOMENON7 INSTRUMENT3 SPECTROGRAPH2) [D:7.00; C:0.10]
+ 56.6500: (TURN_TO SATELLITE1 STAR3 PHENOMENON7) [D:53.93; C:0.10]
+ 110.5800: (TAKE_IMAGE SATELLITE1 STAR3 INSTRUMENT3 INFRARED0) [D:7.00; C:0.10]
+
+
+
+METRIC_VALUE = 117.58
+Solution found:
+Total time:      0.00
+Search time:     0.00
+Actions:         14
+Duration:        117.580
+Plan quality:    117.580 
+Total Num Flips:  15
+     Plan file:       plan_/home/malola/ICAPS/IPC3/Test2/Satellite/Time/pfile3_1.SOL
+

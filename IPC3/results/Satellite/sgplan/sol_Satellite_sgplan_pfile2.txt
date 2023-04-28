@@ -1,0 +1,59 @@
+#
+# Copyright (C) 2006, Board of Trustees of the University of Illinois.
+#
+# The program is copyrighted by the University of Illinois, and should
+# not be distributed without prior approval.  Commercialization of this
+# product requires prior licensing from the University of Illinois.
+# Commercialization includes the integration of this code in part or
+# whole into a product for resale.
+#
+#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+# Author: C. W. Hsu, B. W. Wah, R. Y. Huang, Y. X. Chen
+#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+
+Parsing domain file
+ domain 'SATELLITE' defined
+Parsing problem file
+ problem 'STRIPS-SAT-X-1' defined
+
+
+
+checking for cyclic := effects --- OK.
+
+
+
+
+
+
+
+
+
+
+
+
+Solution found.
+
+; Time 0.00
+; ParsingTime 0.00
+; NrActions 17
+; MakeSpan
+; MetricValue 239.604
+
+	 0.00100:  (TURN_TO SATELLITE0 STAR0 PLANET4)[1.20400]
+	 1.20600:  (SWITCH_ON INSTRUMENT0 SATELLITE0)[2.00000]
+	 3.20700:  (CALIBRATE SATELLITE0 INSTRUMENT0 STAR0)[22.20000]
+	 25.40800:  (TURN_TO SATELLITE0 STAR7 STAR0)[30.66000]
+	 56.06900:  (TAKE_IMAGE SATELLITE0 STAR7 INSTRUMENT0 INFRARED0)[7.00000]
+	 63.07000:  (TURN_TO SATELLITE0 PHENOMENON6 STAR7)[29.32000]
+	 92.39101:  (TAKE_IMAGE SATELLITE0 PHENOMENON6 INSTRUMENT0 INFRARED0)[7.00000]
+	 99.39201:  (SWITCH_OFF INSTRUMENT0 SATELLITE0)[1.00000]
+	 100.39301:  (TURN_TO SATELLITE0 GROUNDSTATION2 PHENOMENON6)[25.11000]
+	 125.50401:  (SWITCH_ON INSTRUMENT1 SATELLITE0)[2.00000]
+	 127.50500:  (CALIBRATE SATELLITE0 INSTRUMENT1 GROUNDSTATION2)[5.54000]
+	 133.04599:  (TURN_TO SATELLITE0 PHENOMENON5 GROUNDSTATION2)[39.44000]
+	 172.48700:  (TAKE_IMAGE SATELLITE0 PHENOMENON5 INSTRUMENT1 IMAGE2)[7.00000]
+	 179.48801:  (TURN_TO SATELLITE0 PLANET4 PHENOMENON5)[15.48000]
+	 194.96899:  (TAKE_IMAGE SATELLITE0 PLANET4 INSTRUMENT1 INFRARED0)[7.00000]
+	 201.97000:  (TURN_TO SATELLITE0 PLANET3 PLANET4)[30.65000]
+	 232.62099:  (TAKE_IMAGE SATELLITE0 PLANET3 INSTRUMENT1 INFRARED0)[7.00000]

@@ -1,0 +1,62 @@
+
+
+NUMERIC_THREATS_MODE: 0
+
+; Command line: /home/malola/Downloads/LPG-td-1.4/lpg-td -o /home/malola/ICAPS/IPC3/Test2/Rovers/Time/CTRover.pddl -f /home/malola/ICAPS/IPC3/Test2/Rovers/Time/pfile2 -speed   
+
+
+Parsing domain file:  domain 'ROVER' defined ... done.
+Parsing problem file:  problem 'ROVERPROB4213' defined ... done.
+
+
+
+Modality: Fast Planner
+
+Number of actions             :      55
+Number of conditional actions :       0
+Number of facts               :      29
+
+
+Analyzing Planning Problem:
+	Temporal Planning Problem: YES
+	Numeric Planning Problem: YES
+	Problem with Timed Initial Literals: NO
+	Problem with Derived Predicates: NO
+
+Evaluation function weights:
+     Action duration 1.00; Action cost 0.00
+
+
+Computing mutex... done
+
+Preprocessing total time: 0.00 seconds
+
+Searching ('.' = every 50 search steps):
+ solution found: 
+ Recompute start times
+
+ first_solution_cpu_time: 0.01 
+
+Plan computed:
+   Time: (ACTION) [action Duration; action Cost]
+ 0.0000: (SAMPLE_SOIL ROVER0 ROVER0STORE WAYPOINT0) [D:10.00; C:0.10]
+ 10.0000: (DROP ROVER0 ROVER0STORE) [D:1.00; C:0.10]
+ 11.0000: (SAMPLE_ROCK ROVER0 ROVER0STORE WAYPOINT0) [D:8.00; C:0.10]
+ 19.0000: (COMMUNICATE_ROCK_DATA ROVER0 GENERAL WAYPOINT0 WAYPOINT0 WAYPOINT1) [D:10.00; C:0.10]
+ 29.0000: (CALIBRATE ROVER0 CAMERA0 OBJECTIVE0 WAYPOINT0) [D:5.00; C:0.10]
+ 34.0000: (TAKE_IMAGE ROVER0 WAYPOINT0 OBJECTIVE1 CAMERA0 LOW_RES) [D:7.00; C:0.10]
+ 41.0000: (COMMUNICATE_IMAGE_DATA ROVER0 GENERAL OBJECTIVE1 LOW_RES WAYPOINT0 WAYPOINT1) [D:15.00; C:0.10]
+ 56.0000: (COMMUNICATE_SOIL_DATA ROVER0 GENERAL WAYPOINT0 WAYPOINT0 WAYPOINT1) [D:10.00; C:0.10]
+
+
+
+METRIC_VALUE = 66.00
+Solution found:
+Total time:      0.01
+Search time:     0.01
+Actions:         8
+Duration:        66.000
+Plan quality:    66.000 
+Total Num Flips:  9
+     Plan file:       plan_/home/malola/ICAPS/IPC3/Test2/Rovers/Time/pfile2_1.SOL
+

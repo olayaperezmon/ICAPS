@@ -1,0 +1,43 @@
+#
+# Copyright (C) 2006, Board of Trustees of the University of Illinois.
+#
+# The program is copyrighted by the University of Illinois, and should
+# not be distributed without prior approval.  Commercialization of this
+# product requires prior licensing from the University of Illinois.
+# Commercialization includes the integration of this code in part or
+# whole into a product for resale.
+#
+#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+# Author: C. W. Hsu, B. W. Wah, R. Y. Huang, Y. X. Chen
+#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+
+Parsing domain file
+ domain 'DEPOT' defined
+Parsing problem file
+ problem 'DEPOTPROB1818' defined
+
+
+
+checking for cyclic := effects --- OK.
+
+
+
+
+; Time 0.00
+; ParsingTime 0.00
+; NrActions 10
+; MakeSpan
+; MetricValue 58.871
+; PlanningTechnique Modified-FF(enforced hill-climbing search) as the subplanner
+
+0.001: (LIFT HOIST0 CRATE1 PALLET0 DEPOT0) [1.0000]
+0.002: (LIFT HOIST1 CRATE0 PALLET1 DISTRIBUTOR0) [1.0000]
+1.003: (LOAD HOIST0 CRATE1 TRUCK1 DEPOT0) [43.0000]
+44.004: (DRIVE TRUCK1 DEPOT0 DISTRIBUTOR0) [0.6250]
+44.630: (LOAD HOIST1 CRATE0 TRUCK1 DISTRIBUTOR0) [1.2222]
+45.853: (UNLOAD HOIST1 CRATE1 TRUCK1 DISTRIBUTOR0) [9.5556]
+55.410: (DRIVE TRUCK1 DISTRIBUTOR0 DISTRIBUTOR1) [0.6250]
+55.411: (DROP HOIST1 CRATE1 PALLET1 DISTRIBUTOR0) [1.0000]
+56.037: (UNLOAD HOIST2 CRATE0 TRUCK1 DISTRIBUTOR1) [1.8333]
+57.871: (DROP HOIST2 CRATE0 PALLET2 DISTRIBUTOR1) [1.0000]

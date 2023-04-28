@@ -1,0 +1,67 @@
+#
+# Copyright (C) 2006, Board of Trustees of the University of Illinois.
+#
+# The program is copyrighted by the University of Illinois, and should
+# not be distributed without prior approval.  Commercialization of this
+# product requires prior licensing from the University of Illinois.
+# Commercialization includes the integration of this code in part or
+# whole into a product for resale.
+#
+#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+# Author: C. W. Hsu, B. W. Wah, R. Y. Huang, Y. X. Chen
+#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+
+Parsing domain file
+ domain 'DRIVERLOG' defined
+Parsing problem file
+ problem 'DLOG-2-3-6' defined
+
+
+
+checking for cyclic := effects --- OK.
+
+
+
+
+
+
+; Time 0.01
+; ParsingTime 0.00
+; NrActions 32
+; MakeSpan
+; MetricValue 874.032
+; PlanningTechnique Modified-FF(enforced hill-climbing search) as the subplanner
+
+0.001: (WALK DRIVER2 S1 P1-2) [69.0000]
+0.002: (WALK DRIVER1 S4 P3-4) [63.0000]
+63.003: (WALK DRIVER1 P3-4 S3) [20.0000]
+69.004: (WALK DRIVER2 P1-2 S2) [100.0000]
+83.005: (WALK DRIVER1 S3 P3-4) [20.0000]
+103.006: (WALK DRIVER1 P3-4 S4) [63.0000]
+169.007: (BOARD-TRUCK DRIVER2 TRUCK1 S2) [1.0000]
+170.008: (DRIVE-TRUCK TRUCK1 S2 S3 DRIVER2) [74.0000]
+244.009: (LOAD-TRUCK PACKAGE3 TRUCK1 S3) [2.0000]
+246.010: (DRIVE-TRUCK TRUCK1 S3 S0 DRIVER2) [39.0000]
+285.011: (DRIVE-TRUCK TRUCK1 S0 S1 DRIVER2) [99.0000]
+384.012: (LOAD-TRUCK PACKAGE2 TRUCK1 S1) [2.0000]
+384.013: (UNLOAD-TRUCK PACKAGE3 TRUCK1 S1) [2.0000]
+386.014: (DRIVE-TRUCK TRUCK1 S1 S2 DRIVER2) [40.0000]
+426.015: (UNLOAD-TRUCK PACKAGE2 TRUCK1 S2) [2.0000]
+426.016: (LOAD-TRUCK PACKAGE1 TRUCK1 S2) [2.0000]
+428.017: (DRIVE-TRUCK TRUCK1 S2 S0 DRIVER2) [65.0000]
+493.018: (DRIVE-TRUCK TRUCK1 S0 S3 DRIVER2) [39.0000]
+532.019: (UNLOAD-TRUCK PACKAGE1 TRUCK1 S3) [2.0000]
+534.020: (DRIVE-TRUCK TRUCK1 S3 S4 DRIVER2) [53.0000]
+587.021: (DISEMBARK-TRUCK DRIVER2 TRUCK1 S4) [1.0000]
+588.022: (WALK DRIVER2 S4 P4-0) [85.0000]
+588.023: (BOARD-TRUCK DRIVER1 TRUCK1 S4) [1.0000]
+589.024: (DRIVE-TRUCK TRUCK1 S4 S3 DRIVER1) [53.0000]
+642.025: (DISEMBARK-TRUCK DRIVER1 TRUCK1 S3) [1.0000]
+673.026: (WALK DRIVER2 P4-0 S0) [22.0000]
+695.027: (BOARD-TRUCK DRIVER2 TRUCK2 S0) [1.0000]
+696.028: (DRIVE-TRUCK TRUCK2 S0 S4 DRIVER2) [41.0000]
+737.029: (DRIVE-TRUCK TRUCK2 S4 S3 DRIVER2) [53.0000]
+790.030: (DISEMBARK-TRUCK DRIVER2 TRUCK2 S3) [1.0000]
+791.031: (WALK DRIVER2 S3 P3-4) [20.0000]
+811.032: (WALK DRIVER2 P3-4 S4) [63.0000]

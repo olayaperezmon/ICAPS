@@ -1,0 +1,72 @@
+#
+# Copyright (C) 2006, Board of Trustees of the University of Illinois.
+#
+# The program is copyrighted by the University of Illinois, and should
+# not be distributed without prior approval.  Commercialization of this
+# product requires prior licensing from the University of Illinois.
+# Commercialization includes the integration of this code in part or
+# whole into a product for resale.
+#
+#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+# Author: C. W. Hsu, B. W. Wah, R. Y. Huang, Y. X. Chen
+#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+
+Parsing domain file
+ domain 'SATELLITE' defined
+Parsing problem file
+ problem 'STRIPS-SAT-X-1' defined
+
+
+
+checking for cyclic := effects --- OK.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Solution found.
+
+; Time 0.00
+; ParsingTime 0.00
+; NrActions 22
+; MakeSpan
+; MetricValue 349.603
+
+	 0.00100:  (TURN_TO SATELLITE1 GROUNDSTATION4 GROUNDSTATION0)[80.70000]
+	 80.70200:  (SWITCH_ON INSTRUMENT3 SATELLITE1)[2.00000]
+	 82.70300:  (CALIBRATE SATELLITE1 INSTRUMENT3 GROUNDSTATION4)[7.43000]
+	 90.13400:  (TURN_TO SATELLITE1 PLANET11 GROUNDSTATION4)[3.91700]
+	 94.05199:  (TAKE_IMAGE SATELLITE1 PLANET11 INSTRUMENT3 IMAGE2)[7.00000]
+	 101.05299:  (TURN_TO SATELLITE1 PLANET10 PLANET11)[17.00000]
+	 118.05400:  (TAKE_IMAGE SATELLITE1 PLANET10 INSTRUMENT3 IMAGE0)[7.00000]
+	 125.05500:  (TURN_TO SATELLITE0 STAR1 STAR6)[4.96800]
+	 130.02400:  (SWITCH_ON INSTRUMENT0 SATELLITE0)[2.00000]
+	 132.02499:  (CALIBRATE SATELLITE0 INSTRUMENT0 STAR1)[10.50000]
+	 142.52600:  (TURN_TO SATELLITE0 PLANET9 STAR1)[1.09800]
+	 143.62500:  (TAKE_IMAGE SATELLITE0 PLANET9 INSTRUMENT0 IMAGE3)[7.00000]
+	 150.62601:  (TURN_TO SATELLITE1 PLANET8 PLANET10)[34.15000]
+	 184.77701:  (TAKE_IMAGE SATELLITE1 PLANET8 INSTRUMENT3 IMAGE0)[7.00000]
+	 191.77800:  (TURN_TO SATELLITE1 STAR7 PLANET8)[32.80000]
+	 224.57901:  (TAKE_IMAGE SATELLITE1 STAR7 INSTRUMENT3 IMAGE0)[7.00000]
+	 231.58000:  (TURN_TO SATELLITE0 STAR6 PLANET9)[23.46000]
+	 255.04102:  (TAKE_IMAGE SATELLITE0 STAR6 INSTRUMENT0 IMAGE1)[7.00000]
+	 262.04202:  (TURN_TO SATELLITE1 PHENOMENON5 STAR7)[28.30000]
+	 290.34299:  (TAKE_IMAGE SATELLITE1 PHENOMENON5 INSTRUMENT3 IMAGE0)[7.00000]
+	 297.34399:  (TURN_TO SATELLITE2 PHENOMENON5 STAR6)[38.25000]
+	 335.59500:  (TURN_TO SATELLITE1 STAR1 PHENOMENON5)[14.03000]

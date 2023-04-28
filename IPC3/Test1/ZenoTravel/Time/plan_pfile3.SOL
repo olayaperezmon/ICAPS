@@ -1,0 +1,20 @@
+
+; Version LPG-td-1.4
+; Seed 24347861
+; Command line: /home/malola/Downloads/LPG-td-1.4/lpg-td -o /home/malola/ICAPS/IPC3/Test1/ZenoTravel/Time/zenotravelTandN.pddl -f /home/malola/ICAPS/IPC3/Test1/ZenoTravel/Time/pfile3 -speed 
+; Problem /home/malola/ICAPS/IPC3/Test1/ZenoTravel/Time
+; Time 0.01
+; Search time 0.01
+; Parsing time 0.00
+; Mutex time 0.00
+; MetricValue 18.15
+
+0.0003:   (BOARD PERSON1 PLANE1 CITY0) [0.3000]
+0.3007:   (FLY PLANE1 CITY0 CITY1) [4.8701]
+5.1711:   (DEBARK PERSON1 PLANE1 CITY1) [0.6000]
+5.1711:   (BOARD PERSON3 PLANE1 CITY1) [0.3000]
+5.1711:   (REFUEL PLANE1 CITY1) [2.0200]
+7.1916:   (ZOOM PLANE1 CITY1 CITY0) [2.8626]
+10.0544:   (DEBARK PERSON3 PLANE1 CITY0) [0.6000]
+
+

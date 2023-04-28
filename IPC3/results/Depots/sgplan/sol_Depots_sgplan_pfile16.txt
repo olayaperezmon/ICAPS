@@ -1,0 +1,61 @@
+#
+# Copyright (C) 2006, Board of Trustees of the University of Illinois.
+#
+# The program is copyrighted by the University of Illinois, and should
+# not be distributed without prior approval.  Commercialization of this
+# product requires prior licensing from the University of Illinois.
+# Commercialization includes the integration of this code in part or
+# whole into a product for resale.
+#
+#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+# Author: C. W. Hsu, B. W. Wah, R. Y. Huang, Y. X. Chen
+#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+
+Parsing domain file
+ domain 'DEPOT' defined
+Parsing problem file
+ problem 'DEPOTPROB4398' defined
+
+
+
+checking for cyclic := effects --- OK.
+
+
+
+
+; Time 0.01
+; ParsingTime 0.00
+; NrActions 28
+; MakeSpan
+; MetricValue 166.084
+; PlanningTechnique Modified-FF(enforced hill-climbing search) as the subplanner
+
+0.001: (DRIVE TRUCK3 DISTRIBUTOR1 DEPOT1) [7.0000]
+0.002: (LIFT HOIST6 CRATE0 PALLET4 DEPOT1) [1.0000]
+0.003: (DRIVE TRUCK2 DEPOT0 DEPOT1) [0.2222]
+0.004: (LIFT HOIST0 CRATE5 CRATE2 DEPOT0) [1.0000]
+0.005: (LIFT HOIST2 CRATE4 PALLET2 DISTRIBUTOR0) [1.0000]
+7.006: (LOAD HOIST6 CRATE0 TRUCK3 DEPOT1) [32.0000]
+39.007: (LIFT HOIST6 CRATE3 CRATE1 DEPOT1) [1.0000]
+40.008: (LIFT HOIST1 CRATE1 PALLET1 DEPOT1) [1.0000]
+40.009: (LOAD HOIST6 CRATE3 TRUCK3 DEPOT1) [24.0000]
+64.010: (DRIVE TRUCK3 DEPOT1 DEPOT0) [9.0000]
+73.011: (LOAD HOIST0 CRATE5 TRUCK3 DEPOT0) [2.7778]
+75.790: (LIFT HOIST0 CRATE2 PALLET0 DEPOT0) [1.0000]
+76.791: (LOAD HOIST0 CRATE2 TRUCK3 DEPOT0) [4.3333]
+81.125: (UNLOAD HOIST0 CRATE3 TRUCK3 DEPOT0) [2.6667]
+83.793: (DRIVE TRUCK3 DEPOT0 DISTRIBUTOR1) [9.0000]
+83.794: (DROP HOIST0 CRATE3 PALLET0 DEPOT0) [1.0000]
+92.795: (UNLOAD HOIST7 CRATE0 TRUCK3 DISTRIBUTOR1) [3.5556]
+96.351: (DRIVE TRUCK3 DISTRIBUTOR1 DEPOT1) [7.0000]
+96.352: (DROP HOIST7 CRATE0 PALLET3 DISTRIBUTOR1) [1.0000]
+103.353: (UNLOAD HOIST6 CRATE2 TRUCK3 DEPOT1) [39.0000]
+142.354: (DRIVE TRUCK3 DEPOT1 DISTRIBUTOR0) [8.0000]
+142.355: (DROP HOIST6 CRATE2 PALLET1 DEPOT1) [1.0000]
+150.356: (LOAD HOIST2 CRATE4 TRUCK3 DISTRIBUTOR0) [1.0000]
+151.357: (UNLOAD HOIST2 CRATE5 TRUCK3 DISTRIBUTOR0) [12.5000]
+163.858: (DRIVE TRUCK3 DISTRIBUTOR0 DEPOT0) [1.0000]
+163.859: (DROP HOIST2 CRATE5 PALLET2 DISTRIBUTOR0) [1.0000]
+164.860: (UNLOAD HOIST0 CRATE4 TRUCK3 DEPOT0) [0.2222]
+165.084: (DROP HOIST0 CRATE4 CRATE3 DEPOT0) [1.0000]

@@ -1,0 +1,132 @@
+#
+# Copyright (C) 2006, Board of Trustees of the University of Illinois.
+#
+# The program is copyrighted by the University of Illinois, and should
+# not be distributed without prior approval.  Commercialization of this
+# product requires prior licensing from the University of Illinois.
+# Commercialization includes the integration of this code in part or
+# whole into a product for resale.
+#
+#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+# Author: C. W. Hsu, B. W. Wah, R. Y. Huang, Y. X. Chen
+#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+
+Parsing domain file
+ domain 'DRIVERLOG' defined
+Parsing problem file
+ problem 'DLOG-3-3-5' defined
+
+
+
+checking for cyclic := effects --- OK.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+; Time 0.01
+; ParsingTime 0.00
+; NrActions 11
+; MakeSpan
+; MetricValue 168.011
+; PlanningTechnique Modified-FF(enforced hill-climbing search) as the subplanner
+
+0.001: (BOARD-TRUCK DRIVER3 TRUCK3 S1) [1.0000]
+0.002: (LOAD-TRUCK PACKAGE1 TRUCK3 S1) [2.0000]
+0.003: (WALK DRIVER2 S2 P1-2) [29.0000]
+0.004: (WALK DRIVER1 S2 P1-2) [29.0000]
+2.005: (DRIVE-TRUCK TRUCK3 S1 S2 DRIVER3) [90.0000]
+29.006: (WALK DRIVER2 P1-2 S1) [44.0000]
+29.007: (WALK DRIVER1 P1-2 S1) [44.0000]
+73.008: (BOARD-TRUCK DRIVER2 TRUCK2 S1) [1.0000]
+74.009: (DRIVE-TRUCK TRUCK2 S1 S0 DRIVER2) [93.0000]
+92.010: (UNLOAD-TRUCK PACKAGE1 TRUCK3 S2) [2.0000]
+167.011: (DISEMBARK-TRUCK DRIVER2 TRUCK2 S0) [1.0000]

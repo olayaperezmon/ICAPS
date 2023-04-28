@@ -1,0 +1,73 @@
+
+
+NUMERIC_THREATS_MODE: 0
+
+; Command line: /home/malola/Downloads/LPG-td-1.4/lpg-td -o /home/malola/ICAPS/IPC3/Test1/ZenoTravel/Time/zenotravelTandN.pddl -f /home/malola/ICAPS/IPC3/Test1/ZenoTravel/Time/pfile6 -speed   
+
+
+Parsing domain file:  domain 'ZENO-TRAVEL' defined ... done.
+Parsing problem file:  problem 'ZTRAVEL-2-5' defined ... done.
+
+
+
+Modality: Fast Planner
+
+Number of actions             :     152
+Number of conditional actions :       0
+Number of facts               :      39
+
+
+Analyzing Planning Problem:
+	Temporal Planning Problem: YES
+	Numeric Planning Problem: YES
+	Problem with Timed Initial Literals: NO
+	Problem with Derived Predicates: NO
+
+Evaluation function weights:
+     Action duration 1.00; Action cost 1.00
+
+
+Computing mutex... done
+
+Preprocessing total time: 0.00 seconds
+
+Searching ('.' = every 50 search steps):
+ solution found: 
+ Recompute start times
+
+ first_solution_cpu_time: 0.01 
+
+Plan computed:
+   Time: (ACTION) [action Duration; action Cost]
+ 0.0000: (BOARD PERSON4 PLANE2 CITY1) [D:0.30; C:0.10]
+ 0.0000: (REFUEL PLANE1 CITY2) [D:3.99; C:0.10]
+ 0.0000: (BOARD PERSON5 PLANE1 CITY2) [D:0.30; C:0.10]
+ 0.0000: (REFUEL PLANE2 CITY1) [D:1.40; C:0.10]
+ 1.4009: (ZOOM PLANE2 CITY1 CITY3) [D:2.59; C:11.35]
+ 3.9864: (FLY PLANE1 CITY2 CITY1) [D:9.00; C:9.72]
+ 3.9934: (DEBARK PERSON4 PLANE2 CITY3) [D:0.60; C:0.10]
+ 3.9934: (REFUEL PLANE2 CITY3) [D:1.21; C:0.10]
+ 5.2040: (ZOOM PLANE2 CITY3 CITY0) [D:2.20; C:9.62]
+ 7.3992: (BOARD PERSON2 PLANE2 CITY0) [D:0.30; C:0.10]
+ 7.6992: (FLY PLANE2 CITY0 CITY1) [D:7.91; C:4.58]
+ 12.9864: (DEBARK PERSON5 PLANE1 CITY1) [D:0.60; C:0.10]
+ 12.9864: (REFUEL PLANE1 CITY1) [D:1.65; C:0.10]
+ 14.6339: (FLY PLANE1 CITY1 CITY0) [D:8.49; C:9.17]
+ 15.6044: (DEBARK PERSON2 PLANE2 CITY1) [D:0.60; C:0.10]
+ 23.1246: (BOARD PERSON1 PLANE1 CITY0) [D:0.30; C:0.10]
+ 23.1246: (REFUEL PLANE1 CITY0) [D:1.55; C:0.10]
+ 24.6788: (ZOOM PLANE1 CITY0 CITY3) [D:3.50; C:19.23]
+ 28.1815: (DEBARK PERSON1 PLANE1 CITY3) [D:0.60; C:0.10]
+
+
+
+METRIC_VALUE = 92.46
+Solution found:
+Total time:      0.01
+Search time:     0.01
+Actions:         19
+Duration:        28.781
+Plan quality:    92.456 
+Total Num Flips:  23
+     Plan file:       plan_/home/malola/ICAPS/IPC3/Test1/ZenoTravel/Time/pfile6_1.SOL
+

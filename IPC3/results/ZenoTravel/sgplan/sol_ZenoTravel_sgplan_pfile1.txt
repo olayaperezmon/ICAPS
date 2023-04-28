@@ -1,0 +1,34 @@
+#
+# Copyright (C) 2006, Board of Trustees of the University of Illinois.
+#
+# The program is copyrighted by the University of Illinois, and should
+# not be distributed without prior approval.  Commercialization of this
+# product requires prior licensing from the University of Illinois.
+# Commercialization includes the integration of this code in part or
+# whole into a product for resale.
+#
+#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+# Author: C. W. Hsu, B. W. Wah, R. Y. Huang, Y. X. Chen
+#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+
+Parsing domain file
+ domain 'ZENO-TRAVEL' defined
+Parsing problem file
+ problem 'ZTRAVEL-1-2' defined
+
+
+
+checking for cyclic := effects --- OK.
+
+
+
+
+; Time 0.00
+; ParsingTime 0.00
+; NrActions 1
+; MakeSpan
+; MetricValue 27.261
+; PlanningTechnique Modified-FF(enforced hill-climbing search) as the subplanner
+
+0.001: (FLY PLANE1 CITY0 CITY1) [3.4242]

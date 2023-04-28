@@ -1,0 +1,91 @@
+
+
+NUMERIC_THREATS_MODE: 0
+
+; Command line: /home/malola/Downloads/LPG-td-1.4/lpg-td -o /home/malola/ICAPS/IPC3/Test1/ZenoTravel/Time/zenotravelTandN.pddl -f /home/malola/ICAPS/IPC3/Test1/ZenoTravel/Time/pfile10 -speed   
+
+
+Parsing domain file:  domain 'ZENO-TRAVEL' defined ... done.
+Parsing problem file:  problem 'ZTRAVEL-3-8' defined ... done.
+
+
+
+Modality: Fast Planner
+
+Number of actions             :     405
+Number of conditional actions :       0
+Number of facts               :      80
+
+
+Analyzing Planning Problem:
+	Temporal Planning Problem: YES
+	Numeric Planning Problem: YES
+	Problem with Timed Initial Literals: NO
+	Problem with Derived Predicates: NO
+
+Evaluation function weights:
+     Action duration 4.00; Action cost 1.00
+
+
+Computing mutex... done
+
+Preprocessing total time: 0.01 seconds
+
+Searching ('.' = every 50 search steps):
+ solution found: 
+ Recompute start times
+
+ first_solution_cpu_time: 0.01 
+
+Plan computed:
+   Time: (ACTION) [action Duration; action Cost]
+ 0.0000: (BOARD PERSON8 PLANE1 CITY0) [D:0.30; C:0.10]
+ 0.0000: (REFUEL PLANE2 CITY4) [D:1.21; C:0.10]
+ 0.0000: (REFUEL PLANE3 CITY2) [D:1.36; C:0.10]
+ 0.0000: (REFUEL PLANE1 CITY0) [D:5.33; C:0.10]
+ 1.2105: (FLY PLANE2 CITY4 CITY1) [D:5.23; C:5.94]
+ 1.3638: (FLY PLANE3 CITY2 CITY4) [D:5.79; C:7.82]
+ 5.3300: (ZOOM PLANE1 CITY0 CITY3) [D:2.77; C:21.28]
+ 6.4359: (BOARD PERSON7 PLANE2 CITY1) [D:0.30; C:0.10]
+ 6.7359: (FLY PLANE2 CITY1 CITY4) [D:5.23; C:5.94]
+ 7.1508: (BOARD PERSON3 PLANE3 CITY4) [D:0.30; C:0.10]
+ 7.1508: (REFUEL PLANE3 CITY4) [D:0.64; C:0.10]
+ 7.7881: (FLY PLANE3 CITY4 CITY2) [D:5.79; C:7.82]
+ 8.1037: (DEBARK PERSON8 PLANE1 CITY3) [D:0.60; C:0.10]
+ 8.1037: (BOARD PERSON1 PLANE1 CITY3) [D:0.30; C:0.10]
+ 8.1037: (REFUEL PLANE1 CITY3) [D:4.06; C:0.10]
+ 11.9613: (DEBARK PERSON7 PLANE2 CITY4) [D:0.60; C:0.10]
+ 11.9613: (BOARD PERSON4 PLANE2 CITY4) [D:0.30; C:0.10]
+ 11.9613: (REFUEL PLANE2 CITY4) [D:1.04; C:0.10]
+ 12.1679: (ZOOM PLANE1 CITY3 CITY1) [D:2.46; C:18.84]
+ 13.0027: (FLY PLANE2 CITY4 CITY1) [D:5.23; C:5.94]
+ 13.5751: (FLY PLANE3 CITY2 CITY1) [D:3.31; C:4.47]
+ 14.6241: (DEBARK PERSON1 PLANE1 CITY1) [D:0.60; C:0.10]
+ 15.2241: (FLY PLANE1 CITY1 CITY2) [D:3.52; C:5.59]
+ 16.8828: (BOARD PERSON5 PLANE3 CITY1) [D:0.30; C:0.10]
+ 16.8828: (REFUEL PLANE3 CITY1) [D:1.00; C:0.10]
+ 17.8844: (ZOOM PLANE3 CITY1 CITY0) [D:2.23; C:12.93]
+ 18.2281: (DEBARK PERSON4 PLANE2 CITY1) [D:0.60; C:0.10]
+ 18.8281: (FLY PLANE2 CITY1 CITY3) [D:4.74; C:5.38]
+ 20.1164: (DEBARK PERSON5 PLANE3 CITY0) [D:0.60; C:0.10]
+ 20.1164: (BOARD PERSON6 PLANE3 CITY0) [D:0.30; C:0.10]
+ 20.1164: (REFUEL PLANE3 CITY0) [D:1.05; C:0.10]
+ 21.1695: (ZOOM PLANE3 CITY0 CITY3) [D:2.10; C:12.16]
+ 23.2689: (DEBARK PERSON6 PLANE3 CITY3) [D:0.60; C:0.10]
+ 23.2689: (DEBARK PERSON3 PLANE3 CITY3) [D:0.60; C:0.10]
+ 23.5675: (BOARD PERSON2 PLANE2 CITY3) [D:0.30; C:0.10]
+ 23.8675: (FLY PLANE2 CITY3 CITY2) [D:6.61; C:7.50]
+ 30.4731: (DEBARK PERSON2 PLANE2 CITY2) [D:0.60; C:0.10]
+
+
+
+METRIC_VALUE = 245.91
+Solution found:
+Total time:      0.01
+Search time:     0.00
+Actions:         37
+Duration:        31.073
+Plan quality:    245.910 
+Total Num Flips:  41
+     Plan file:       plan_/home/malola/ICAPS/IPC3/Test1/ZenoTravel/Time/pfile10_1.SOL
+

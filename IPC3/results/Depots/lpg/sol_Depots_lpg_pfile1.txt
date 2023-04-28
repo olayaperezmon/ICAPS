@@ -1,0 +1,66 @@
+
+
+NUMERIC_THREATS_MODE: 0
+
+; Command line: /home/malola/Downloads/LPG-td-1.4/lpg-td -o /home/malola/ICAPS/IPC3/Test1/Depots/Time/DepotsTime.pddl -f /home/malola/ICAPS/IPC3/Test1/Depots/Time/pfile1 -speed   
+
+
+Parsing domain file:  domain 'DEPOT' defined ... done.
+Parsing problem file:  problem 'DEPOTPROB1818' defined ... done.
+
+
+
+Modality: Fast Planner
+
+Number of actions             :      90
+Number of conditional actions :       0
+Number of facts               :      40
+
+
+Analyzing Planning Problem:
+	Temporal Planning Problem: YES
+	Numeric Planning Problem: YES
+	Problem with Timed Initial Literals: NO
+	Problem with Derived Predicates: NO
+
+Evaluation function weights:
+     Action duration 1.00; Action cost 0.00
+
+
+Computing mutex... done
+
+Preprocessing total time: 0.00 seconds
+
+Searching ('.' = every 50 search steps):
+ solution found: 
+ Recompute start times
+
+ first_solution_cpu_time: 0.01 
+
+Plan computed:
+   Time: (ACTION) [action Duration; action Cost]
+ 0.0000: (DRIVE TRUCK0 DISTRIBUTOR1 DISTRIBUTOR0) [D:1.00; C:0.10]
+ 0.0000: (LIFT HOIST1 CRATE0 PALLET1 DISTRIBUTOR0) [D:1.00; C:0.10]
+ 0.0000: (LIFT HOIST0 CRATE1 PALLET0 DEPOT0) [D:1.00; C:0.10]
+ 0.0000: (LOAD HOIST0 CRATE1 TRUCK1 DEPOT0) [D:43.00; C:0.10]
+ 1.0000: (LOAD HOIST1 CRATE0 TRUCK0 DISTRIBUTOR0) [D:1.22; C:0.10]
+ 2.2222: (DRIVE TRUCK0 DISTRIBUTOR0 DISTRIBUTOR1) [D:1.25; C:0.10]
+ 3.4722: (UNLOAD HOIST2 CRATE0 TRUCK0 DISTRIBUTOR1) [D:1.83; C:0.10]
+ 3.4722: (DROP HOIST2 CRATE0 PALLET2 DISTRIBUTOR1) [D:1.00; C:0.10]
+ 43.0000: (DRIVE TRUCK1 DEPOT0 DISTRIBUTOR1) [D:0.88; C:0.10]
+ 43.8750: (DRIVE TRUCK1 DISTRIBUTOR1 DISTRIBUTOR0) [D:0.50; C:0.10]
+ 44.3750: (UNLOAD HOIST1 CRATE1 TRUCK1 DISTRIBUTOR0) [D:9.56; C:0.10]
+ 44.3750: (DROP HOIST1 CRATE1 PALLET1 DISTRIBUTOR0) [D:1.00; C:0.10]
+
+
+
+METRIC_VALUE = 53.93
+Solution found:
+Total time:      0.01
+Search time:     0.01
+Actions:         12
+Duration:        45.375
+Plan quality:    53.931 
+Total Num Flips:  13
+     Plan file:       plan_/home/malola/ICAPS/IPC3/Test1/Depots/Time/pfile1_1.SOL
+

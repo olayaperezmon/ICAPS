@@ -1,0 +1,87 @@
+
+
+NUMERIC_THREATS_MODE: 0
+
+; Command line: /home/malola/Downloads/LPG-td-1.4/lpg-td -o /home/malola/ICAPS/IPC3/Test1/DriverLog/Time/driverlogTimed.pddl -f /home/malola/ICAPS/IPC3/Test1/DriverLog/Time/pfile5 -speed   
+
+
+Parsing domain file:  domain 'DRIVERLOG' defined ... done.
+Parsing problem file:  problem 'DLOG-3-2-5' defined ... done.
+
+
+
+Modality: Fast Planner
+
+Number of actions             :     168
+Number of conditional actions :       0
+Number of facts               :      57
+
+
+Analyzing Planning Problem:
+	Temporal Planning Problem: YES
+	Numeric Planning Problem: YES
+	Problem with Timed Initial Literals: NO
+	Problem with Derived Predicates: NO
+
+Evaluation function weights:
+     Action duration 1.00; Action cost 0.00
+
+
+Computing mutex... done
+
+Preprocessing total time: 0.00 seconds
+
+Searching ('.' = every 50 search steps):
+ solution found: 
+ Recompute start times
+
+ first_solution_cpu_time: 0.01 
+
+Plan computed:
+   Time: (ACTION) [action Duration; action Cost]
+ 0.0000: (BOARD-TRUCK DRIVER1 TRUCK2 S1) [D:1.00; C:0.10]
+ 0.0000: (WALK DRIVER2 S0 P0-2) [D:34.00; C:0.10]
+ 1.0000: (DRIVE-TRUCK TRUCK2 S1 S0 DRIVER1) [D:20.00; C:0.10]
+ 21.0000: (LOAD-TRUCK PACKAGE1 TRUCK2 S0) [D:2.00; C:0.10]
+ 21.0000: (LOAD-TRUCK PACKAGE2 TRUCK2 S0) [D:2.00; C:0.10]
+ 23.0000: (DRIVE-TRUCK TRUCK2 S0 S1 DRIVER1) [D:20.00; C:0.10]
+ 34.0000: (WALK DRIVER2 P0-2 S2) [D:78.00; C:0.10]
+ 43.0000: (UNLOAD-TRUCK PACKAGE2 TRUCK2 S1) [D:2.00; C:0.10]
+ 45.0000: (DRIVE-TRUCK TRUCK2 S1 S0 DRIVER1) [D:20.00; C:0.10]
+ 45.0000: (LOAD-TRUCK PACKAGE2 TRUCK1 S1) [D:2.00; C:0.10]
+ 47.0000: (UNLOAD-TRUCK PACKAGE2 TRUCK1 S1) [D:2.00; C:0.10]
+ 65.0000: (DRIVE-TRUCK TRUCK2 S0 S1 DRIVER1) [D:20.00; C:0.10]
+ 85.0000: (UNLOAD-TRUCK PACKAGE1 TRUCK2 S1) [D:2.00; C:0.10]
+ 85.0000: (DISEMBARK-TRUCK DRIVER1 TRUCK2 S1) [D:1.00; C:0.10]
+ 86.0000: (BOARD-TRUCK DRIVER1 TRUCK1 S1) [D:1.00; C:0.10]
+ 87.0000: (LOAD-TRUCK PACKAGE1 TRUCK1 S1) [D:2.00; C:0.10]
+ 89.0000: (UNLOAD-TRUCK PACKAGE1 TRUCK1 S1) [D:2.00; C:0.10]
+ 91.0000: (DRIVE-TRUCK TRUCK1 S1 S2 DRIVER1) [D:14.00; C:0.10]
+ 105.0000: (LOAD-TRUCK PACKAGE3 TRUCK1 S2) [D:2.00; C:0.10]
+ 105.0000: (LOAD-TRUCK PACKAGE4 TRUCK1 S2) [D:2.00; C:0.10]
+ 107.0000: (DRIVE-TRUCK TRUCK1 S2 S0 DRIVER1) [D:50.00; C:0.10]
+ 157.0000: (UNLOAD-TRUCK PACKAGE4 TRUCK1 S0) [D:2.00; C:0.10]
+ 159.0000: (DRIVE-TRUCK TRUCK1 S0 S2 DRIVER1) [D:50.00; C:0.10]
+ 209.0000: (DRIVE-TRUCK TRUCK1 S2 S1 DRIVER1) [D:14.00; C:0.10]
+ 223.0000: (UNLOAD-TRUCK PACKAGE3 TRUCK1 S1) [D:2.00; C:0.10]
+ 225.0000: (LOAD-TRUCK PACKAGE3 TRUCK2 S1) [D:2.00; C:0.10]
+ 225.0000: (DRIVE-TRUCK TRUCK1 S1 S2 DRIVER1) [D:14.00; C:0.10]
+ 227.0000: (UNLOAD-TRUCK PACKAGE3 TRUCK2 S1) [D:2.00; C:0.10]
+ 239.0000: (DISEMBARK-TRUCK DRIVER1 TRUCK1 S2) [D:1.00; C:0.10]
+ 240.0000: (WALK DRIVER1 S2 P1-2) [D:18.00; C:0.10]
+ 258.0000: (WALK DRIVER1 P1-2 S1) [D:46.00; C:0.10]
+ 304.0000: (BOARD-TRUCK DRIVER1 TRUCK2 S1) [D:1.00; C:0.10]
+ 305.0000: (DRIVE-TRUCK TRUCK2 S1 S2 DRIVER1) [D:14.00; C:0.10]
+
+
+
+METRIC_VALUE = 319.00
+Solution found:
+Total time:      0.01
+Search time:     0.01
+Actions:         33
+Duration:        319.000
+Plan quality:    319.000 
+Total Num Flips:  39
+     Plan file:       plan_/home/malola/ICAPS/IPC3/Test1/DriverLog/Time/pfile5_1.SOL
+

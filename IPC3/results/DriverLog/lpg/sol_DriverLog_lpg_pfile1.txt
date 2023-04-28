@@ -1,0 +1,64 @@
+
+
+NUMERIC_THREATS_MODE: 0
+
+; Command line: /home/malola/Downloads/LPG-td-1.4/lpg-td -o /home/malola/ICAPS/IPC3/Test1/DriverLog/Time/driverlogTimed.pddl -f /home/malola/ICAPS/IPC3/Test1/DriverLog/Time/pfile1 -speed   
+
+
+Parsing domain file:  domain 'DRIVERLOG' defined ... done.
+Parsing problem file:  problem 'DLOG-2-2-2' defined ... done.
+
+
+
+Modality: Fast Planner
+
+Number of actions             :      88
+Number of conditional actions :       0
+Number of facts               :      32
+
+
+Analyzing Planning Problem:
+	Temporal Planning Problem: YES
+	Numeric Planning Problem: YES
+	Problem with Timed Initial Literals: NO
+	Problem with Derived Predicates: NO
+
+Evaluation function weights:
+     Action duration 1.00; Action cost 0.00
+
+
+Computing mutex... done
+
+Preprocessing total time: 0.00 seconds
+
+Searching ('.' = every 50 search steps):
+ solution found: 
+ Recompute start times
+
+ first_solution_cpu_time: 0.00 
+
+Plan computed:
+   Time: (ACTION) [action Duration; action Cost]
+ 0.0000: (WALK DRIVER2 S2 P1-2) [D:79.00; C:0.10]
+ 0.0000: (WALK DRIVER1 S2 P1-2) [D:79.00; C:0.10]
+ 79.0000: (WALK DRIVER2 P1-2 S1) [D:29.00; C:0.10]
+ 79.0000: (WALK DRIVER1 P1-2 S1) [D:29.00; C:0.10]
+ 108.0000: (WALK DRIVER2 S1 P1-0) [D:43.00; C:0.10]
+ 151.0000: (WALK DRIVER2 P1-0 S0) [D:80.00; C:0.10]
+ 231.0000: (BOARD-TRUCK DRIVER2 TRUCK2 S0) [D:1.00; C:0.10]
+ 232.0000: (DISEMBARK-TRUCK DRIVER2 TRUCK2 S0) [D:1.00; C:0.10]
+ 233.0000: (BOARD-TRUCK DRIVER2 TRUCK1 S0) [D:1.00; C:0.10]
+ 234.0000: (DRIVE-TRUCK TRUCK1 S0 S1 DRIVER2) [D:70.00; C:0.10]
+
+
+
+METRIC_VALUE = 304.00
+Solution found:
+Total time:      0.00
+Search time:     0.00
+Actions:         10
+Duration:        304.000
+Plan quality:    304.000 
+Total Num Flips:  10
+     Plan file:       plan_/home/malola/ICAPS/IPC3/Test1/DriverLog/Time/pfile1_1.SOL
+

@@ -1,0 +1,76 @@
+
+
+NUMERIC_THREATS_MODE: 0
+
+; Command line: /home/malola/Downloads/LPG-td-1.4/lpg-td -o /home/malola/ICAPS/IPC3/Test2/Satellite/Time/computedDurationsSat.pddl -f /home/malola/ICAPS/IPC3/Test2/Satellite/Time/pfile6 -speed   
+
+
+Parsing domain file:  domain 'SATELLITE' defined ... done.
+Parsing problem file:  problem 'STRIPS-SAT-X-1' defined ... done.
+
+
+
+Modality: Fast Planner
+
+Number of actions             :     488
+Number of conditional actions :       0
+Number of facts               :      90
+
+
+Analyzing Planning Problem:
+	Temporal Planning Problem: YES
+	Numeric Planning Problem: YES
+	Problem with Timed Initial Literals: NO
+	Problem with Derived Predicates: NO
+
+Evaluation function weights:
+     Action duration 1.00; Action cost 0.00
+
+
+Computing mutex... done
+
+Preprocessing total time: 0.00 seconds
+
+Searching ('.' = every 50 search steps):
+ solution found: 
+ Recompute start times
+
+ first_solution_cpu_time: 0.01 
+
+Plan computed:
+   Time: (ACTION) [action Duration; action Cost]
+ 0.0000: (SWITCH_ON INSTRUMENT2 SATELLITE1) [D:2.00; C:0.10]
+ 0.0000: (TURN_TO SATELLITE1 STAR2 STAR6) [D:45.21; C:0.10]
+ 45.2100: (CALIBRATE SATELLITE1 INSTRUMENT2 STAR2) [D:2.04; C:0.10]
+ 45.2100: (TURN_TO SATELLITE1 PLANET4 STAR2) [D:12.54; C:0.10]
+ 57.7500: (TAKE_IMAGE SATELLITE1 PLANET4 INSTRUMENT2 THERMOGRAPH2) [D:7.00; C:0.10]
+ 64.7500: (TURN_TO SATELLITE1 PLANET5 PLANET4) [D:0.50; C:0.10]
+ 65.2507: (TURN_TO SATELLITE1 STAR6 PLANET5) [D:59.00; C:0.10]
+ 124.2507: (TAKE_IMAGE SATELLITE1 STAR6 INSTRUMENT2 THERMOGRAPH2) [D:7.00; C:0.10]
+ 131.2507: (SWITCH_OFF INSTRUMENT2 SATELLITE1) [D:1.00; C:0.10]
+ 131.2507: (TURN_TO SATELLITE1 STAR2 STAR6) [D:45.21; C:0.10]
+ 132.2507: (SWITCH_ON INSTRUMENT3 SATELLITE1) [D:2.00; C:0.10]
+ 176.4607: (CALIBRATE SATELLITE1 INSTRUMENT3 STAR2) [D:67.90; C:0.10]
+ 176.4607: (TURN_TO SATELLITE1 PLANET5 STAR2) [D:58.60; C:0.10]
+ 244.3607: (TAKE_IMAGE SATELLITE1 PLANET5 INSTRUMENT3 SPECTROGRAPH0) [D:7.00; C:0.10]
+ 251.3607: (TURN_TO SATELLITE1 PHENOMENON8 PLANET5) [D:31.54; C:0.10]
+ 282.9007: (TAKE_IMAGE SATELLITE1 PHENOMENON8 INSTRUMENT3 SPECTROGRAPH0) [D:7.00; C:0.10]
+ 289.9007: (TURN_TO SATELLITE1 STAR9 PHENOMENON8) [D:67.96; C:0.10]
+ 357.8607: (TAKE_IMAGE SATELLITE1 STAR9 INSTRUMENT3 INFRARED1) [D:7.00; C:0.10]
+ 364.8607: (TURN_TO SATELLITE1 STAR7 STAR9) [D:32.47; C:0.10]
+ 397.3307: (TAKE_IMAGE SATELLITE1 STAR7 INSTRUMENT3 INFRARED3) [D:7.00; C:0.10]
+ 404.3307: (TURN_TO SATELLITE1 STAR10 STAR7) [D:17.21; C:0.10]
+ 421.5407: (TAKE_IMAGE SATELLITE1 STAR10 INSTRUMENT3 INFRARED3) [D:7.00; C:0.10]
+
+
+
+METRIC_VALUE = 428.54
+Solution found:
+Total time:      0.01
+Search time:     0.01
+Actions:         22
+Duration:        428.541
+Plan quality:    428.541 
+Total Num Flips:  22
+     Plan file:       plan_/home/malola/ICAPS/IPC3/Test2/Satellite/Time/pfile6_1.SOL
+

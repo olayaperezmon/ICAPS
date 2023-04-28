@@ -1,0 +1,61 @@
+
+
+NUMERIC_THREATS_MODE: 0
+
+; Command line: /home/malola/Downloads/LPG-td-1.4/lpg-td -o /home/malola/ICAPS/IPC3/Test1/ZenoTravel/Time/zenotravelTandN.pddl -f /home/malola/ICAPS/IPC3/Test1/ZenoTravel/Time/pfile3 -speed   
+
+
+Parsing domain file:  domain 'ZENO-TRAVEL' defined ... done.
+Parsing problem file:  problem 'ZTRAVEL-2-4' defined ... done.
+
+
+
+Modality: Fast Planner
+
+Number of actions             :      90
+Number of conditional actions :       0
+Number of facts               :      27
+
+
+Analyzing Planning Problem:
+	Temporal Planning Problem: YES
+	Numeric Planning Problem: YES
+	Problem with Timed Initial Literals: NO
+	Problem with Derived Predicates: NO
+
+Evaluation function weights:
+     Action duration 1.00; Action cost 1.00
+
+
+Computing mutex... done
+
+Preprocessing total time: 0.00 seconds
+
+Searching ('.' = every 50 search steps):
+ solution found: 
+ Recompute start times
+
+ first_solution_cpu_time: 0.01 
+
+Plan computed:
+   Time: (ACTION) [action Duration; action Cost]
+ 0.0000: (BOARD PERSON1 PLANE1 CITY0) [D:0.30; C:0.10]
+ 0.3000: (FLY PLANE1 CITY0 CITY1) [D:4.87; C:2.25]
+ 5.1701: (DEBARK PERSON1 PLANE1 CITY1) [D:0.60; C:0.10]
+ 5.1701: (BOARD PERSON3 PLANE1 CITY1) [D:0.30; C:0.10]
+ 5.1701: (REFUEL PLANE1 CITY1) [D:2.02; C:0.10]
+ 7.1901: (ZOOM PLANE1 CITY1 CITY0) [D:2.86; C:5.25]
+ 10.0527: (DEBARK PERSON3 PLANE1 CITY0) [D:0.60; C:0.10]
+
+
+
+METRIC_VALUE = 18.15
+Solution found:
+Total time:      0.01
+Search time:     0.01
+Actions:         7
+Duration:        10.653
+Plan quality:    18.153 
+Total Num Flips:  7
+     Plan file:       plan_/home/malola/ICAPS/IPC3/Test1/ZenoTravel/Time/pfile3_1.SOL
+

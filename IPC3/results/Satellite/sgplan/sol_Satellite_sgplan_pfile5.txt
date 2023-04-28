@@ -1,0 +1,64 @@
+#
+# Copyright (C) 2006, Board of Trustees of the University of Illinois.
+#
+# The program is copyrighted by the University of Illinois, and should
+# not be distributed without prior approval.  Commercialization of this
+# product requires prior licensing from the University of Illinois.
+# Commercialization includes the integration of this code in part or
+# whole into a product for resale.
+#
+#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+# Author: C. W. Hsu, B. W. Wah, R. Y. Huang, Y. X. Chen
+#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+
+Parsing domain file
+ domain 'SATELLITE' defined
+Parsing problem file
+ problem 'STRIPS-SAT-X-1' defined
+
+
+
+checking for cyclic := effects --- OK.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Solution found.
+
+; Time 0.00
+; ParsingTime 0.00
+; NrActions 16
+; MakeSpan
+; MetricValue 394.213
+
+	 0.00100:  (TURN_TO SATELLITE0 GROUNDSTATION2 PHENOMENON8)[16.34000]
+	 16.34200:  (SWITCH_ON INSTRUMENT0 SATELLITE0)[2.00000]
+	 18.34300:  (CALIBRATE SATELLITE0 INSTRUMENT0 GROUNDSTATION2)[85.00000]
+	 103.34399:  (TURN_TO SATELLITE0 PLANET9 GROUNDSTATION2)[17.61000]
+	 120.95499:  (TAKE_IMAGE SATELLITE0 PLANET9 INSTRUMENT0 SPECTROGRAPH1)[7.00000]
+	 127.95599:  (TURN_TO SATELLITE0 PHENOMENON8 PLANET9)[18.68000]
+	 146.63701:  (TAKE_IMAGE SATELLITE0 PHENOMENON8 INSTRUMENT0 IMAGE2)[7.00000]
+	 153.63800:  (TURN_TO SATELLITE0 STAR7 PHENOMENON8)[7.01300]
+	 160.65201:  (TAKE_IMAGE SATELLITE0 STAR7 INSTRUMENT0 THERMOGRAPH0)[7.00000]
+	 167.65300:  (TURN_TO SATELLITE0 PHENOMENON6 STAR7)[15.45000]
+	 183.10400:  (TAKE_IMAGE SATELLITE0 PHENOMENON6 INSTRUMENT0 IMAGE2)[7.00000]
+	 190.10500:  (TURN_TO SATELLITE0 PHENOMENON5 PHENOMENON6)[40.12000]
+	 230.22600:  (TAKE_IMAGE SATELLITE0 PHENOMENON5 INSTRUMENT0 IMAGE2)[7.00000]
+	 237.22701:  (TURN_TO SATELLITE0 STAR3 PHENOMENON5)[75.00000]
+	 312.22803:  (TAKE_IMAGE SATELLITE0 STAR3 INSTRUMENT0 THERMOGRAPH0)[7.00000]
+	 319.22900:  (TURN_TO SATELLITE0 PHENOMENON5 STAR3)[75.00000]

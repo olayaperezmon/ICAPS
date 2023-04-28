@@ -1,0 +1,47 @@
+#
+# Copyright (C) 2006, Board of Trustees of the University of Illinois.
+#
+# The program is copyrighted by the University of Illinois, and should
+# not be distributed without prior approval.  Commercialization of this
+# product requires prior licensing from the University of Illinois.
+# Commercialization includes the integration of this code in part or
+# whole into a product for resale.
+#
+#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+# Author: C. W. Hsu, B. W. Wah, R. Y. Huang, Y. X. Chen
+#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+
+Parsing domain file
+ domain 'ZENO-TRAVEL' defined
+Parsing problem file
+ problem 'ZTRAVEL-2-5' defined
+
+
+
+checking for cyclic := effects --- OK.
+
+
+
+
+
+
+; Time 0.00
+; ParsingTime 0.00
+; NrActions 12
+; MakeSpan
+; MetricValue 132.043
+; PlanningTechnique Modified-FF(enforced hill-climbing search) as the subplanner
+
+0.001: (REFUEL PLANE2 CITY2) [2.2383]
+0.002: (REFUEL PLANE1 CITY2) [7.5194]
+2.241: (ZOOM PLANE2 CITY2 CITY0) [2.0525]
+4.295: (BOARD PERSON4 PLANE2 CITY0) [0.3000]
+4.596: (FLY PLANE2 CITY0 CITY1) [4.7386]
+7.525: (ZOOM PLANE1 CITY2 CITY1) [1.2774]
+8.804: (BOARD PERSON2 PLANE1 CITY1) [0.3000]
+9.105: (FLY PLANE1 CITY1 CITY2) [3.2597]
+9.338: (DEBARK PERSON4 PLANE2 CITY1) [0.6000]
+12.367: (DEBARK PERSON2 PLANE1 CITY2) [0.6000]
+12.368: (REFUEL PLANE1 CITY2) [7.9823]
+20.351: (ZOOM PLANE1 CITY2 CITY0) [1.8906]

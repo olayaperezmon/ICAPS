@@ -1,0 +1,48 @@
+#
+# Copyright (C) 2006, Board of Trustees of the University of Illinois.
+#
+# The program is copyrighted by the University of Illinois, and should
+# not be distributed without prior approval.  Commercialization of this
+# product requires prior licensing from the University of Illinois.
+# Commercialization includes the integration of this code in part or
+# whole into a product for resale.
+#
+#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+# Author: C. W. Hsu, B. W. Wah, R. Y. Huang, Y. X. Chen
+#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+
+Parsing domain file
+ domain 'DRIVERLOG' defined
+Parsing problem file
+ problem 'DLOG-2-2-4' defined
+
+
+
+checking for cyclic := effects --- OK.
+
+
+
+
+
+
+; Time 0.00
+; ParsingTime 0.00
+; NrActions 13
+; MakeSpan
+; MetricValue 202.013
+; PlanningTechnique Modified-FF(enforced hill-climbing search) as the subplanner
+
+0.001: (BOARD-TRUCK DRIVER1 TRUCK1 S1) [1.0000]
+0.002: (LOAD-TRUCK PACKAGE3 TRUCK1 S1) [2.0000]
+0.003: (WALK DRIVER2 S0 P2-0) [100.0000]
+2.004: (DRIVE-TRUCK TRUCK1 S1 S0 DRIVER1) [42.0000]
+44.005: (LOAD-TRUCK PACKAGE1 TRUCK1 S0) [2.0000]
+44.006: (LOAD-TRUCK PACKAGE2 TRUCK1 S0) [2.0000]
+46.007: (DRIVE-TRUCK TRUCK1 S0 S1 DRIVER1) [42.0000]
+88.008: (UNLOAD-TRUCK PACKAGE1 TRUCK1 S1) [2.0000]
+88.009: (UNLOAD-TRUCK PACKAGE2 TRUCK1 S1) [2.0000]
+90.010: (DRIVE-TRUCK TRUCK1 S1 S2 DRIVER1) [55.0000]
+100.011: (WALK DRIVER2 P2-0 S2) [73.0000]
+145.012: (UNLOAD-TRUCK PACKAGE3 TRUCK1 S2) [2.0000]
+147.013: (DRIVE-TRUCK TRUCK1 S2 S1 DRIVER1) [55.0000]

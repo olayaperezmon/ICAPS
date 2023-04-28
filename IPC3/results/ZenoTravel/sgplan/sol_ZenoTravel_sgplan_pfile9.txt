@@ -1,0 +1,65 @@
+#
+# Copyright (C) 2006, Board of Trustees of the University of Illinois.
+#
+# The program is copyrighted by the University of Illinois, and should
+# not be distributed without prior approval.  Commercialization of this
+# product requires prior licensing from the University of Illinois.
+# Commercialization includes the integration of this code in part or
+# whole into a product for resale.
+#
+#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+# Author: C. W. Hsu, B. W. Wah, R. Y. Huang, Y. X. Chen
+#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+
+Parsing domain file
+ domain 'ZENO-TRAVEL' defined
+Parsing problem file
+ problem 'ZTRAVEL-3-7' defined
+
+
+
+checking for cyclic := effects --- OK.
+
+
+
+
+
+
+
+
+; Time 0.00
+; ParsingTime 0.00
+; NrActions 28
+; MakeSpan
+; MetricValue 86.136
+; PlanningTechnique Modified-FF(enforced hill-climbing search) as the subplanner
+
+0.001: (REFUEL PLANE3 CITY1) [1.2507]
+0.002: (BOARD PERSON3 PLANE2 CITY2) [0.3000]
+0.003: (REFUEL PLANE2 CITY2) [4.2326]
+0.004: (REFUEL PLANE1 CITY2) [6.8542]
+1.256: (FLY PLANE3 CITY1 CITY3) [7.5983]
+4.239: (FLY PLANE2 CITY2 CITY1) [5.1774]
+6.861: (ZOOM PLANE1 CITY2 CITY4) [2.6483]
+8.857: (BOARD PERSON6 PLANE3 CITY3) [0.3000]
+8.858: (BOARD PERSON7 PLANE3 CITY3) [0.3000]
+9.159: (FLY PLANE3 CITY3 CITY4) [7.3932]
+9.421: (BOARD PERSON2 PLANE2 CITY1) [0.3000]
+9.514: (BOARD PERSON1 PLANE1 CITY4) [0.3000]
+9.723: (FLY PLANE2 CITY1 CITY0) [4.4409]
+9.816: (FLY PLANE1 CITY4 CITY2) [6.0952]
+14.166: (BOARD PERSON4 PLANE2 CITY0) [0.3000]
+14.167: (DEBARK PERSON2 PLANE2 CITY0) [0.6000]
+14.768: (FLY PLANE2 CITY0 CITY4) [3.2849]
+15.916: (DEBARK PERSON1 PLANE1 CITY2) [0.6000]
+16.561: (BOARD PERSON5 PLANE3 CITY4) [0.3000]
+16.562: (DEBARK PERSON6 PLANE3 CITY4) [0.6000]
+16.563: (DEBARK PERSON7 PLANE3 CITY4) [0.6000]
+16.564: (REFUEL PLANE3 CITY4) [1.0273]
+17.592: (FLY PLANE3 CITY4 CITY1) [7.3162]
+18.060: (DEBARK PERSON3 PLANE2 CITY4) [0.6000]
+18.061: (REFUEL PLANE2 CITY4) [4.3605]
+22.422: (ZOOM PLANE2 CITY4 CITY3) [1.6764]
+24.100: (DEBARK PERSON4 PLANE2 CITY3) [0.6000]
+24.914: (DEBARK PERSON5 PLANE3 CITY1) [0.6000]

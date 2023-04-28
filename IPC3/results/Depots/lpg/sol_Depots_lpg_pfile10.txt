@@ -1,0 +1,79 @@
+
+
+NUMERIC_THREATS_MODE: 0
+
+; Command line: /home/malola/Downloads/LPG-td-1.4/lpg-td -o /home/malola/ICAPS/IPC3/Test1/Depots/Time/DepotsTime.pddl -f /home/malola/ICAPS/IPC3/Test1/Depots/Time/pfile10 -speed   
+
+
+Parsing domain file:  domain 'DEPOT' defined ... done.
+Parsing problem file:  problem 'DEPOTPROB7654' defined ... done.
+
+
+
+Modality: Fast Planner
+
+Number of actions             :     900
+Number of conditional actions :       0
+Number of facts               :     186
+
+
+Analyzing Planning Problem:
+	Temporal Planning Problem: YES
+	Numeric Planning Problem: YES
+	Problem with Timed Initial Literals: NO
+	Problem with Derived Predicates: NO
+
+Evaluation function weights:
+     Action duration 1.00; Action cost 0.00
+
+
+Computing mutex... done
+
+Preprocessing total time: 0.00 seconds
+
+Searching ('.' = every 50 search steps):
+. solution found: 
+ Recompute start times
+
+ first_solution_cpu_time: 0.01 
+
+Plan computed:
+   Time: (ACTION) [action Duration; action Cost]
+ 0.0000: (DRIVE TRUCK1 DEPOT2 DISTRIBUTOR2) [D:2.00; C:0.10]
+ 0.0000: (LIFT HOIST5 CRATE3 CRATE2 DISTRIBUTOR2) [D:1.00; C:0.10]
+ 0.0000: (LIFT HOIST1 CRATE0 PALLET1 DEPOT1) [D:1.00; C:0.10]
+ 0.0000: (LOAD HOIST1 CRATE0 TRUCK0 DEPOT1) [D:16.00; C:0.10]
+ 0.0000: (LIFT HOIST2 CRATE4 PALLET2 DEPOT2) [D:1.00; C:0.10]
+ 0.0000: (LIFT HOIST3 CRATE5 PALLET3 DISTRIBUTOR0) [D:1.00; C:0.10]
+ 0.0000: (LIFT HOIST0 CRATE1 PALLET0 DEPOT0) [D:1.00; C:0.10]
+ 2.0000: (LOAD HOIST5 CRATE3 TRUCK1 DISTRIBUTOR2) [D:4.00; C:0.10]
+ 6.0000: (LIFT HOIST5 CRATE2 PALLET5 DISTRIBUTOR2) [D:1.00; C:0.10]
+ 6.0000: (LOAD HOIST5 CRATE2 TRUCK1 DISTRIBUTOR2) [D:18.50; C:0.10]
+ 16.0000: (DRIVE TRUCK0 DEPOT1 DEPOT2) [D:1.00; C:0.10]
+ 17.0000: (LOAD HOIST2 CRATE4 TRUCK0 DEPOT2) [D:3.83; C:0.10]
+ 20.8333: (DRIVE TRUCK0 DEPOT2 DISTRIBUTOR2) [D:1.33; C:0.10]
+ 24.5000: (UNLOAD HOIST5 CRATE4 TRUCK0 DISTRIBUTOR2) [D:5.75; C:0.10]
+ 24.5000: (DROP HOIST5 CRATE4 PALLET5 DISTRIBUTOR2) [D:1.00; C:0.10]
+ 24.5000: (DRIVE TRUCK1 DISTRIBUTOR2 DISTRIBUTOR0) [D:3.00; C:0.10]
+ 25.5000: (UNLOAD HOIST5 CRATE0 TRUCK0 DISTRIBUTOR2) [D:24.00; C:0.10]
+ 25.5000: (DROP HOIST5 CRATE0 CRATE4 DISTRIBUTOR2) [D:1.00; C:0.10]
+ 27.5000: (LOAD HOIST3 CRATE5 TRUCK1 DISTRIBUTOR0) [D:42.00; C:0.10]
+ 69.5000: (UNLOAD HOIST3 CRATE2 TRUCK1 DISTRIBUTOR0) [D:74.00; C:0.10]
+ 69.5000: (DROP HOIST3 CRATE2 PALLET3 DISTRIBUTOR0) [D:1.00; C:0.10]
+ 143.5000: (DRIVE TRUCK1 DISTRIBUTOR0 DEPOT0) [D:2.00; C:0.10]
+ 145.5000: (LOAD HOIST0 CRATE1 TRUCK1 DEPOT0) [D:72.00; C:0.10]
+ 217.5000: (UNLOAD HOIST0 CRATE3 TRUCK1 DEPOT0) [D:16.00; C:0.10]
+ 217.5000: (DROP HOIST0 CRATE3 PALLET0 DEPOT0) [D:1.00; C:0.10]
+
+
+
+METRIC_VALUE = 233.50
+Solution found:
+Total time:      0.01
+Search time:     0.01
+Actions:         25
+Duration:        218.500
+Plan quality:    233.500 
+Total Num Flips:  52
+     Plan file:       plan_/home/malola/ICAPS/IPC3/Test1/Depots/Time/pfile10_1.SOL
+

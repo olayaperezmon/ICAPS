@@ -1,0 +1,158 @@
+#
+# Copyright (C) 2006, Board of Trustees of the University of Illinois.
+#
+# The program is copyrighted by the University of Illinois, and should
+# not be distributed without prior approval.  Commercialization of this
+# product requires prior licensing from the University of Illinois.
+# Commercialization includes the integration of this code in part or
+# whole into a product for resale.
+#
+#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+# Author: C. W. Hsu, B. W. Wah, R. Y. Huang, Y. X. Chen
+#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+
+Parsing domain file
+ domain 'ZENO-TRAVEL' defined
+Parsing problem file
+ problem 'ZTRAVEL-5-10' defined
+
+
+
+checking for cyclic := effects --- OK.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+; Time 0.05
+; ParsingTime 0.00
+; NrActions 45
+; MakeSpan
+; MetricValue 472.813
+; PlanningTechnique Modified-FF(enforced hill-climbing search) as the subplanner
+
+0.001: (FLY PLANE2 CITY2 CITY7) [5.2917]
+0.002: (BOARD PERSON9 PLANE3 CITY4) [0.3000]
+0.003: (REFUEL PLANE3 CITY4) [1.2076]
+0.004: (FLY PLANE5 CITY9 CITY6) [4.0000]
+0.005: (FLY PLANE1 CITY5 CITY0) [4.3248]
+0.006: (REFUEL PLANE4 CITY8) [1.8128]
+1.215: (FLY PLANE3 CITY4 CITY5) [7.8208]
+1.821: (ZOOM PLANE4 CITY8 CITY5) [1.9369]
+4.009: (BOARD PERSON8 PLANE5 CITY6) [0.3000]
+4.010: (REFUEL PLANE5 CITY6) [3.4397]
+4.336: (BOARD PERSON3 PLANE1 CITY0) [0.3000]
+4.337: (REFUEL PLANE1 CITY0) [2.1294]
+5.305: (BOARD PERSON10 PLANE2 CITY7) [0.3000]
+5.306: (REFUEL PLANE2 CITY7) [2.3828]
+6.469: (FLY PLANE1 CITY0 CITY2) [7.1197]
+7.456: (FLY PLANE5 CITY6 CITY1) [3.2842]
+7.691: (FLY PLANE2 CITY7 CITY9) [7.3750]
+9.046: (DEBARK PERSON9 PLANE3 CITY5) [0.6000]
+9.647: (FLY PLANE3 CITY5 CITY7) [8.6604]
+10.744: (DEBARK PERSON8 PLANE5 CITY1) [0.6000]
+11.345: (FLY PLANE5 CITY1 CITY7) [4.8526]
+13.596: (DEBARK PERSON3 PLANE1 CITY2) [0.6000]
+15.072: (DEBARK PERSON10 PLANE2 CITY9) [0.6000]
+15.673: (FLY PLANE2 CITY9 CITY0) [7.4000]
+16.202: (BOARD PERSON7 PLANE5 CITY7) [0.3000]
+16.503: (FLY PLANE5 CITY7 CITY5) [4.8316]
+18.316: (REFUEL PLANE3 CITY7) [0.9395]
+19.256: (FLY PLANE3 CITY7 CITY9) [8.3491]
+21.337: (DEBARK PERSON7 PLANE5 CITY5) [0.6000]
+21.338: (REFUEL PLANE5 CITY5) [3.4365]
+23.080: (BOARD PERSON6 PLANE2 CITY0) [0.3000]
+23.381: (FLY PLANE2 CITY0 CITY6) [4.9000]
+24.778: (FLY PLANE5 CITY5 CITY8) [3.2316]
+27.611: (BOARD PERSON4 PLANE3 CITY9) [0.3000]
+27.912: (FLY PLANE3 CITY9 CITY7) [8.3491]
+28.285: (DEBARK PERSON6 PLANE2 CITY6) [0.6000]
+28.286: (BOARD PERSON5 PLANE2 CITY6) [0.3000]
+28.887: (FLY PLANE2 CITY6 CITY1) [5.2000]
+34.088: (DEBARK PERSON5 PLANE2 CITY1) [0.6000]
+34.089: (BOARD PERSON2 PLANE2 CITY1) [0.3000]
+34.090: (REFUEL PLANE2 CITY1) [2.4131]
+36.268: (DEBARK PERSON4 PLANE3 CITY7) [0.6000]
+36.506: (FLY PLANE2 CITY1 CITY8) [6.1667]
+42.673: (DEBARK PERSON2 PLANE2 CITY8) [0.6000]
+43.274: (FLY PLANE2 CITY8 CITY3) [7.9917]

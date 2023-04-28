@@ -1,0 +1,69 @@
+
+
+NUMERIC_THREATS_MODE: 0
+
+; Command line: /home/malola/Downloads/LPG-td-1.4/lpg-td -o /home/malola/ICAPS/IPC3/Test2/Rovers/Time/CTRover.pddl -f /home/malola/ICAPS/IPC3/Test2/Rovers/Time/pfile3 -speed   
+
+
+Parsing domain file:  domain 'ROVER' defined ... done.
+Parsing problem file:  problem 'ROVERPROB3726' defined ... done.
+
+
+
+Modality: Fast Planner
+
+Number of actions             :      80
+Number of conditional actions :       0
+Number of facts               :      45
+
+
+Analyzing Planning Problem:
+	Temporal Planning Problem: YES
+	Numeric Planning Problem: YES
+	Problem with Timed Initial Literals: NO
+	Problem with Derived Predicates: NO
+
+Evaluation function weights:
+     Action duration 1.00; Action cost 0.00
+
+
+Computing mutex... done
+
+Preprocessing total time: 0.00 seconds
+
+Searching ('.' = every 50 search steps):
+ solution found: 
+ Recompute start times
+
+ first_solution_cpu_time: 0.01 
+
+Plan computed:
+   Time: (ACTION) [action Duration; action Cost]
+ 0.0000: (NAVIGATE ROVER1 WAYPOINT3 WAYPOINT0) [D:5.00; C:0.10]
+ 5.0000: (SAMPLE_ROCK ROVER1 ROVER1STORE WAYPOINT0) [D:8.00; C:0.10]
+ 13.0000: (NAVIGATE ROVER1 WAYPOINT0 WAYPOINT1) [D:5.00; C:0.10]
+ 13.0000: (DROP ROVER1 ROVER1STORE) [D:1.00; C:0.10]
+ 18.0000: (CALIBRATE ROVER1 CAMERA1 OBJECTIVE0 WAYPOINT1) [D:5.00; C:0.10]
+ 23.0000: (NAVIGATE ROVER1 WAYPOINT1 WAYPOINT0) [D:5.00; C:0.10]
+ 28.0000: (TAKE_IMAGE ROVER1 WAYPOINT0 OBJECTIVE0 CAMERA1 COLOUR) [D:7.00; C:0.10]
+ 35.0000: (RECHARGE ROVER1 WAYPOINT0) [D:3.88; C:0.10]
+ 38.8750: (NAVIGATE ROVER1 WAYPOINT0 WAYPOINT3) [D:5.00; C:0.10]
+ 43.8750: (NAVIGATE ROVER1 WAYPOINT3 WAYPOINT2) [D:5.00; C:0.10]
+ 48.8750: (SAMPLE_SOIL ROVER1 ROVER1STORE WAYPOINT2) [D:10.00; C:0.10]
+ 58.8750: (NAVIGATE ROVER1 WAYPOINT2 WAYPOINT3) [D:5.00; C:0.10]
+ 63.8750: (COMMUNICATE_ROCK_DATA ROVER1 GENERAL WAYPOINT0 WAYPOINT3 WAYPOINT0) [D:10.00; C:0.10]
+ 73.8750: (COMMUNICATE_IMAGE_DATA ROVER1 GENERAL OBJECTIVE0 COLOUR WAYPOINT3 WAYPOINT0) [D:15.00; C:0.10]
+ 88.8750: (COMMUNICATE_SOIL_DATA ROVER1 GENERAL WAYPOINT2 WAYPOINT3 WAYPOINT0) [D:10.00; C:0.10]
+
+
+
+METRIC_VALUE = 98.88
+Solution found:
+Total time:      0.01
+Search time:     0.01
+Actions:         15
+Duration:        98.875
+Plan quality:    98.875 
+Total Num Flips:  30
+     Plan file:       plan_/home/malola/ICAPS/IPC3/Test2/Rovers/Time/pfile3_1.SOL
+
